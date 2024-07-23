@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h2>Dashboard</h2>
+        </header>
+        <main>
+            <div id="userDetails" class="user-details"></div>
+            <button id="logoutButton" class="logout-button">Logout</button>
+            
+            <form id="changePasswordForm">
+                <input type="password" id="currentPassword" placeholder="Current Password" required>
+                <input type="password" id="newPassword" placeholder="New Password" required>
+                <input type="password" id="confirmNewPassword" placeholder="Confirm New Password" required>
+                <button type="submit" class="change-password-button">Change Password</button>
+                <div id="changePasswordMessage" class="message"></div>
+            </form>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
